@@ -1,0 +1,8 @@
+pathToExecutable: ./fuzz.js
+args: "@@"
+pathToInput: corpus
+lang: js
+fuzzer: jsfuzz
+cores: 1
+numberOfMachines: 1
+pre_fuzz: npm install asciidoctor@2.0.3
