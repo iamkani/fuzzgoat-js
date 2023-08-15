@@ -12,6 +12,7 @@ try:
     access = response.json()['access']
 except:
     print(f" # UNEXPECTED RESPONSE FROM THE SERVER; EXITING...")
+    print(response.json())
     exit(1)
 
     
