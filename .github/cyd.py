@@ -32,8 +32,6 @@ response = requests.post(f'{base_url}users/{user_id}/projects/by_path/', data, h
 
 print(response.content.decode())
 
-print(data)
-
 response = requests.post(f'{base_url}users/{user_id}/git/', data, headers=headers)
 
 print(response.content.decode())
