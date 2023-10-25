@@ -22,9 +22,8 @@ response = requests.get(f'{base_url}users/self', headers=headers)
 user_id = response.json()['id']
 
 data = {
-    'repo': os.getenv('REPO'),
+    'repo': os.getenv('GITHUB_REPOSITORY'),
     'commit': os.getenv('GITHUB_SHA'),
-    'project': os.getenv('PROJECT_ID'),
 }
 
 print(data)
