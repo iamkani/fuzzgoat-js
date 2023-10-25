@@ -29,7 +29,7 @@ data = {
 
 print(data)
 
-response = requests.post(f'{base_url}users/{user_id}/projects/get_project_id', data, headers=headers)
+response = requests.post(f'{base_url}users/{user_id}/projects/get_project_id/', data, headers=headers)
 
 print(response.content.decode())
 
