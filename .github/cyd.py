@@ -24,6 +24,7 @@ user_id = response.json()['id']
 data = {
     'repo': os.getenv('GITHUB_REPOSITORY'),
     'commit': os.getenv('GITHUB_SHA'),
+    'host': 'GitHub',
 }
 
 print(data)
