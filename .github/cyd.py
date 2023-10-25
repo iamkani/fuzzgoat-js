@@ -29,6 +29,12 @@ data = {
 
 print(data)
 
+response = requests.post(f'{base_url}users/{user_id}/projects/get_project_id', data, headers=headers)
+
+print(response.content.decode())
+
+print(data)
+
 response = requests.post(f'{base_url}users/{user_id}/git/', data, headers=headers)
 
 print(response.content.decode())
