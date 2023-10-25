@@ -21,7 +21,6 @@ jobs:
       env:
         CYDERIAN_USERNAME: ${{ secrets.CYDERIAN_USERNAME }}
         CYDERIAN_PASSWORD: ${{ secrets.CYDERIAN_PASSWORD }}
-        PROJECT_ID: 3
-        REPO: https://github.com/hamidazimy/fuzzgoat-js.git
+        REPO: ${{ GITHUB_REPOSITORY }}
       run: |
         python .github/cyd.py
