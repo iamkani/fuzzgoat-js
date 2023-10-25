@@ -33,6 +33,8 @@ response = requests.post(f'{base_url}users/{user_id}/projects/by_path/', data, h
 
 print(response.content.decode())
 
+data['repo'] = response.json()['id']
+
 response = requests.post(f'{base_url}users/{user_id}/git/', data, headers=headers)
 
 print(response.content.decode())
