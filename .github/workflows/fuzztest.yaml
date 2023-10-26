@@ -21,5 +21,8 @@ jobs:
       env:
         CYDERIAN_USERNAME: ${{ secrets.CYDERIAN_USERNAME }}
         CYDERIAN_PASSWORD: ${{ secrets.CYDERIAN_PASSWORD }}
+        REPOSITORY_HOST: GitHub
+        REPOSITORY_PATH: ${{ github.repository }}
+        COMMIT_SHA: ${{ github.sha }}
       run: |
         python .github/cyd.py
