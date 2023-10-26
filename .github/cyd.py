@@ -5,6 +5,12 @@ base_url = 'https://api.cydarien.com/api'
 username = os.getenv('CYDERIAN_USERNAME')
 password = os.getenv('CYDERIAN_PASSWORD')
 
+
+host = os.getenv('REPOSITORY_HOST')
+repo = os.getenv('REPOSITORY_PATH')
+
+print(host, repo)
+
 try:
     response = requests.post(f'{base_url}/users/login/', data={
         'username': username, 'password': password
