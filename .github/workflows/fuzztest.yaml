@@ -1,4 +1,4 @@
-name: Cyderian
+name: CYDARIEN
 
 on: [push]
 
@@ -19,8 +19,8 @@ jobs:
         pip install requests
     - name: sending requests
       env:
-        CYDERIAN_USERNAME: ${{ secrets.CYDERIAN_USERNAME }}
-        CYDERIAN_PASSWORD: ${{ secrets.CYDERIAN_PASSWORD }}
+        CYDARIEN_USERNAME: ${{ secrets.CYDARIEN_USERNAME }}
+        CYDARIEN_PASSWORD: ${{ secrets.CYDARIEN_PASSWORD }}
         REPOSITORY_HOST: GitHub
         REPOSITORY_PATH: ${{ github.repository }}
         COMMIT_SHA: ${{ github.sha }}
