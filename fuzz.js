@@ -1,6 +1,5 @@
 const jpeg = require('jpeg-js');
 
-
 function fuzz(buf) {
     try {
         jpeg.decode(buf);
