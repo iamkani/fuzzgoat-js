@@ -6,6 +6,7 @@ function fuzz(buf) {
     } catch (e) {
         // Those are "valid" exceptions. we can't catch them in one line as
         // jpeg-js doesn't export/inherit from one exception class/style.
+        //Test Comment
         if (e.message.indexOf('JPEG') !== -1 ||
             e.message.indexOf('length octect') !== -1 ||
             e.message.indexOf('Failed to') !== -1 ||
