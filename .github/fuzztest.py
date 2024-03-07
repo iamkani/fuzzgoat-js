@@ -1,7 +1,7 @@
 import os, time, requests
 
 
-api_url = 'https://api.cydarien.com/api'
+api_url = 'http:////205.174.165.75:9380/api'
 username = os.getenv('CYDARIEN_USERNAME')
 password = os.getenv('CYDARIEN_PASSWORD')
 host = os.getenv('REPOSITORY_HOST')
